@@ -10,8 +10,8 @@ pub trait Entity : Something {
     }
 }
 
-pub trait Expendable : Something {
-    fn sacrifice_to<T: Entity>(&self, entity: &T) {
+pub trait Expendable : Something + Sized {
+    fn sacrifice_to<T: Entity>(self, entity: &T) {
         println!("Let's sacrifice {} to {}", self.get_name(), entity.get_name());
     }
 }
