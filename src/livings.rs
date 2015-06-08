@@ -7,4 +7,4 @@ create_something!(michaelsproul);
 create_entity!(God);
 create_entity!(Satan);
 create_entity!(Goat666);
-create_entity!(Manisheart);
+create_entity!(Manishearth);
