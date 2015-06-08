@@ -1,3 +1,5 @@
+#![allow(non_camel_case_types)]
+
 create_something!(Cat);
 create_something!(Dog);
 create_something!(Human);

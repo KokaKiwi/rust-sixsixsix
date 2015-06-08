@@ -1,7 +1,8 @@
 #![feature(collections)]
 
 pub use self::traits::{Something, Entity, Expendable};
-pub use self::livings::{Cat, Dog, Human, Goat, God, Satan, Goat666};
+pub use self::livings::{Cat, Dog, Human, Goat, michaelsproul};
+pub use self::livings::{God, Satan, Goat666, Manishearth};
 
 #[test]
 fn it_works() {
