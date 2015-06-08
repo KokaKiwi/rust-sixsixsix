@@ -20,7 +20,7 @@ fn summon_satan() {
     let gg = God::new("God", "Lord of the world");
     let gs = Satan::new("Satan", "King of hell and goat's killer");
     let bg = Goat666::new("Goat ?!", "Oh my god ! It's a goat !");
-    let mh = Manisheart::new("Manisheart", "YOU DARE WAKE ME FROM MY SLUMBER??!");
+    let mh = Manishearth::new("Manishearth", "YOU DARE WAKE ME FROM MY SLUMBER??!");
 
     c.sacrifice_to(&gs);
     d.sacrifice_to(&gg);
