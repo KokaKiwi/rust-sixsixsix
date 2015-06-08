@@ -1,6 +1,10 @@
 pub use self::traits::{Something, Entity, Expendable};
-pub use self::livings::{Cat, Dog, Human, Goat, michaelsproul};
+pub use self::livings::{Cat, Dog, Human, Goat, michaelsproul, Kitty};
 pub use self::livings::{God, Satan, Goat666, Manishearth};
+
+mod macros;
+pub mod traits;
+pub mod livings;
 
 #[test]
 fn it_works() {
@@ -27,7 +31,3 @@ fn summon_satan() {
     g.sacrifice_to(&gs);
     m.sacrifice_to(&mh);
 }
-
-mod macros;
-mod traits;
-mod livings;

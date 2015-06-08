@@ -5,6 +5,7 @@ create_something!(Dog);
 create_something!(Human);
 create_something!(Goat);
 create_something!(michaelsproul);
+create_something!(Kitty);
 
 create_entity!(God);
 create_entity!(Satan);
