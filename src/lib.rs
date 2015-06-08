@@ -1,5 +1,3 @@
-#![feature(collections)]
-
 pub use self::traits::{Something, Entity, Expendable};
 pub use self::livings::{Cat, Dog, Human, Goat, michaelsproul};
 pub use self::livings::{God, Satan, Goat666, Manishearth};

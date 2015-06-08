@@ -9,7 +9,7 @@ macro_rules! create_something(
         impl $name {
             pub fn new(name: &str) -> $name {
                 $name {
-                    name: String::from_str(name)
+                    name: name.to_owned(),
                 }
             }
         }
@@ -34,8 +34,8 @@ macro_rules! create_entity(
         impl $name {
             pub fn new(name: &str, function: &str) -> $name {
                 $name {
-                    name: String::from_str(name),
-                    function: String::from_str(function)
+                    name: name.to_owned(),
+                    function: function.to_owned(),
                 }
             }
         }
