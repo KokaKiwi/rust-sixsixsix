@@ -19,6 +19,7 @@ fn summon_satan() {
     let h = Human::new("Jesus");
     let g = Goat::new("It's just a goat !");
     let m = michaelsproul::new("I'm a Rust contributor");
+    let kittens = vec![Kitty::new("Felix"), Kitty::new("Rosti"), Kitty::new("Fungus"), Kitty::new("Blue waffle")];
 
     let gg = God::new("God", "Lord of the world");
     let gs = Satan::new("Satan", "King of hell and goat's killer");
@@ -30,4 +31,5 @@ fn summon_satan() {
     h.sacrifice_to(&bg);
     g.sacrifice_to(&gs);
     m.sacrifice_to(&mh);
+    kittens.sacrifice_to(&gg);
 }

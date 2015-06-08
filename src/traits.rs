@@ -15,3 +15,20 @@ pub trait Expendable : Something + Sized {
         println!("Let's sacrifice {} to {}", self.get_name(), entity.get_name());
     }
 }
+
+impl<T: Something> Something for Vec<T> {
+    fn get_name(&self) -> &str {
+        match self.len() {
+            0 => "nothing",
+            _ => self[0].get_name(),
+        }
+    }
+}
+
+impl<T: Expendable> Expendable for Vec<T> {
+    fn sacrifice_to<E: Entity>(self, entity: &E) {
+        for thing in self {
+            thing.sacrifice_to(entity);
+        }
+    }
+}
